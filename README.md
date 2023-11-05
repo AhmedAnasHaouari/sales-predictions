@@ -10,33 +10,51 @@ Big Mart Sales Prediction : https://datahack.analyticsvidhya.com/contest/practic
 
 For this dataset, there were 8523 rows and 12 columns.
 
+### Data Dictionary
+
+![sample image](Dict.png)
+
 ## To prepare this data, the data was cleaned, and the following processes were performed:
 
 ### Exploratory Data Analysis:
+     - During the exploratory data analysis, a boxplot and histogram was visualized for each numeric datatype column. 
+    - Also, a barplot was visualized for each categorical column. 
+    - This gave a good baseline for all of the numeric and categorical columns for univariate EDA.
+    
+#### Data Distribution
+![sample image](téléchargement.png)
 
-#### Visual 1 Title
-![sample image](project1_sample_image.png)
+> This figure shows distribution of the variables : Visibility, Item MRP and Outlet Sales.
 
-> Sentence about visualization.
+### Explanatory Visuals
+![sample image](téléchargement(4).png)
 
-#### Visual 2 Title
+> This figure shows Item sales by types, by fat content, Outlet Size and Outlet Location Type.
+
+![sample image](téléchargement(5).png)
+
+> This figure shows the sales rates depending in the average Item MRP and we can see that the sales increase with the MRP of the product.
 
 ## Model
 
-Describe your final model
+  - Linear Regression Model
+  - Decision Tree Regressor Model
+  - Tuned Decision Tree Regressor Model
 
-Report the most important metrics
-
-Refer to the metrics to describe how well the model would solve the business problem
-
+- Training Set Scores:
+MAE: 762.63 
+MSE: 1,172,123.39 
+RMSE: 1,082.65   
+R2: 0.60
+- Testing Set Scores:
+MAE: 738.44 
+MSE: 1,118,204.90 
+RMSE: 1,057.45   
+R2: 0.59
+   
 ## Recommendations:
 
-More of your own text here
-
-
-## Limitations & Next Steps
-
-More of your own text here
+- Tuned Decision Tree Model by Max Depth (Depth = 5) was the model with best results for the testing data. But The model still perform poorly, other types of models can be explored to see how they perform.
 
 
 ### For further information
